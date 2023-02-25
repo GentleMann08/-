@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Кинотеатр "Дубье"</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="icon" href="assets/дуб.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    </head>
+    <body id="page">
+        <header class="d-flex; justify-content-center; align-items-center; align-text-center;">
+            <div class="d-flex">
+                <div id="ModeButton" class="modeButton">
+                    <img src="assets/modes/light.png" class="animated bounce infinite" alt="Sun">
+                </div>
+                <div class="d-flex justify-content-center" style="width: 100%">
+                    <h1 class="my-heading my-5 text-center">
+                        Купить место
+                    </h1>
+                </div>
+            </div>
+        </header>
+        <body>
+            <form class="form-group mx-4">
+                <label class="form-label" for="num">Введите номер карты</label>
+                <input class="form-control" name="num" type="number" id="num">
+                <label class="form-label" for="date">Введите дату регистрации карты через "/"</label>
+                <input class="form-control type="text" name="date" id="date">
+                <label class="form-label" for="cvc">Введите защитный код карты</label>
+                <input class="form-control" name="cvc" type="number" id="cvc">
+                <button class="btn btn-primary my-3" id="button" type="button">Отправить</button>
+                <div id="error"></div>
+            </form>
+        </body>
+        <script src="js/index.js" defer></script>
+        <script src="js/decoration.js" defer></script>
